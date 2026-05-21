@@ -10,6 +10,9 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 
 //importar as telas
 import Jogador1 from './components/Jogador1';
+import Jogador2 from './components/Jogador2';
+
+
 
 //criar o Drawer 
 const Drawer = createDrawerNavigator();
@@ -20,16 +23,22 @@ export default function APP() {
   return (
     //container principal da navegação
     <NavigationContainer>
-      { /*menu lateral*/}
+      {/*menu lateral*/}
       <Drawer.Navigator>
         {/*tela do jogador1*/}
         <Drawer.Screen
           // nome que aparece no menu
           name="1 jogador"
-          //componente que será aberto
           component={Jogador1}
         />
+        <Drawer.Screen
+          name="2 jogador"
+          component={Jogador2} 
+          />
       </Drawer.Navigator>
     </NavigationContainer>
+
+
+
   );
 }

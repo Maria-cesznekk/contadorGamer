@@ -11,7 +11,7 @@ import {
 } from "react-native-web";
 
 // Componente principal APP
-export default function Jogador1() {
+export default function App() {
   //Cria uma esta chamado (variavel php) chamado 'pontos'
   //pontos = valor atual
   //setPontos = função para alterar o valor
@@ -43,7 +43,7 @@ export default function Jogador1() {
     <View style={styles.container}>
       {/*Titulo do APP*/}
       <Text style={styles.titulo}>
-        🎮 Contador Gamer
+        🎮 Jogador 1
       </Text>
       {/*Mostra o valor dos pontos*/}
       <Text style={styles.pontos}>{pontos}</Text>
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     //tamanho da fonte
     fontSize: 32,
     //cor do texto
-    color: '#00ff88',
+    color: '#ff00d0ff',
     //texto em negrito
     fontWeight: 'bold',
     //espaço abaixo
