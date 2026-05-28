@@ -11,7 +11,7 @@ import {
 } from "react-native-web";
 
 // Componente principal APP
-export default function App() {
+export default function Jogador1() {
   //Cria uma esta chamado (variavel php) chamado 'pontos'
   //pontos = valor atual
   //setPontos = função para alterar o valor
@@ -36,14 +36,12 @@ export default function App() {
     setPontos(0);
   }
   //tudo que esta no RETURN aparece na tela
-
-
   return (
     //View principal do APP
     <View style={styles.container}>
       {/*Titulo do APP*/}
       <Text style={styles.titulo}>
-        🎮 Jogador 1
+        🎮 Contador gamer
       </Text>
       {/*Mostra o valor dos pontos*/}
       <Text style={styles.pontos}>{pontos}</Text>
